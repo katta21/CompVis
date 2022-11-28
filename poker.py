@@ -192,7 +192,7 @@ def evaluateHands(cards, hands):
 
     #If there is only one winning hand, that will be returned
     if len(winning_hands) == 1:
-        print(hands[winning_hands[0]])
+        #print(hands[winning_hands[0]])
         return hands[winning_hands[0]]
 
     #If there are multiple winning hands I will determine the highest rank of them all
@@ -202,11 +202,11 @@ def evaluateHands(cards, hands):
         winning_comp = getTier(c)[1]
         for h in winning_hands:
             c = cards + hands[h]
-            print(getTier(c)[1])
+            #print(getTier(c)[1])
             if getTier(c)[1] > winning_comp:
                 winning_hand = hands[h]
                 winning_comp = getTier(c)[1]
-        print (winning_hand)
+        #print (winning_hand)
         return winning_hand
 
 
