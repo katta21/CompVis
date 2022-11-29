@@ -160,4 +160,3 @@ print('Winning Hand: ' + str(winning_hand))
 # Close all windows and close the PiCamera video stream.
 cv2.destroyAllWindows()
 videostream.stop()
-
